@@ -1,0 +1,44 @@
+.accordion {
+  border-bottom: 1px solid var(--grayish-blue);
+  padding: 20px 0;
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.label:hover {
+  color: var(--soft-red);
+}
+
+.arrowUp {
+  transform: rotate(180deg);
+}
+.content {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.active__content {
+  max-height: 250px;
+  transition: 0.2s;
+}
+
+.active__content p {
+  line-height: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  .label {
+    font-size: 1.2rem;
+  }
+  .active__content p {
+    font-size: 1.3rem;
+    line-height: 35px;
+  }
+}

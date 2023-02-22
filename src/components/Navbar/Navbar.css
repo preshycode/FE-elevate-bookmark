@@ -1,0 +1,142 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 30px auto 0 auto;
+    
+    
+}
+
+.navbar__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navbar__links ul {
+    
+    display: flex;
+    list-style: none;
+    
+    
+}
+.navbar__links ul li {
+    margin: 0 20px;
+}
+.navbar__links ul li a {
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+.navbar__links ul li a:hover {
+    color: var(--soft-red);
+}
+
+
+.navbar__links button {
+    border: none;
+    padding: 10px 30px;
+    background-color: var(--soft-red);
+    color: var(--white);
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.navbar__links button:hover {
+    background-color: var(--white);
+    border: 1px solid var(--soft-red);
+    color: var(--soft-red);
+    border-radius: 10px;
+}
+
+.navbar__mobile {
+    display: none;
+}
+.navbar__hamburger {
+    display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+   
+
+
+    .navbar__links {
+        display: none;
+    }
+
+    .navbar__hamburger {
+        display: block;
+    }
+
+    .navbar__mobile {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: hsl(229, 31%, 21%, 0.9);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 9;
+        
+    }
+    
+    .navbar__mobile-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: 30px auto 0 auto;
+        border-bottom: 1px solid hsl(229, 8%, 60%, 0.2);
+        padding-bottom: 40px;
+        
+    }
+       
+    
+    .navbar__mobile-menu ul {
+        list-style: none;
+        text-align: center;
+        border-bottom: 1px solid hsl(229, 8%, 60%, 0.2);
+        margin-bottom: 30px;
+    }
+
+        .navbar__mobile-menu li {
+            padding: 25px 0;
+            border-bottom: 1px solid hsl(229, 8%, 60%, 0.2);
+            width: 80vw;
+            
+        }
+    .navbar__mobile-menu li a {
+        text-decoration: none;
+        color: var(--white);
+        letter-spacing: 2px;
+        
+    }
+
+    .navbar__mobile-menu button {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        background-color: hsl(229, 31%, 21%, 0);
+        border: 1px solid var(--white);
+        color: var(--white);
+        border-radius: 5px;
+
+    }
+
+    .navbar__social {
+        display: flex;
+        justify-content: center;
+        margin-top: 40vh;
+    }
+    .navbar__social img {
+        margin: 20px;
+    }
+
+
+}

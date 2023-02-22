@@ -1,0 +1,23 @@
+:root {
+  --font-family: Rubik, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  --white: rgba(255, 255, 255, 0.87);
+  --soft-blue: hsl(231, 69%, 60%);
+  --soft-red: hsl(0, 94%, 66%);
+  --grayish-blue: hsl(229, 8%, 60%);
+  --dark-blue: hsl(229, 31%, 21%);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--font-family);
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+}

@@ -1,0 +1,32 @@
+.extention {
+  width: 80%;
+  margin: 300px auto 200px auto;
+}
+
+.extention__text {
+  text-align: center;
+  width: 40%;
+  margin: auto;
+}
+
+.extention__text h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.extention__text p {
+  font-size: 1.3rem;
+  line-height: 30px;
+  color: var(--grayish-blue);
+}
+
+@media screen and (max-width: 900px) {
+  .extention {
+    width: 90%;
+    margin-top: 200px;
+  }
+  .extention__text {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+}
